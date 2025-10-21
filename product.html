@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - GeoCloth</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">GeoCloth</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="product.html">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section class="products-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Koleksi Produk Kami</h2>
+                    <p class="lead">Pilih dari berbagai macam kaos dan hoodie berkualitas tinggi</p>
+                </div>
+            </div>
+
+            <!-- Kaos Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="mb-4">Kaos</h3>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/basic.jpg" class="card-img-top" alt="Kaos Basic">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Kaos Basic</h5>
+                            <p class="card-text">Kaos dengan bahan cotton combed 20s yang nyaman dan tahan lama.</p>
+                            <div class="mt-auto">
+                                <p class="price">Rp 75.000</p>
+                                <button class="btn btn-primary w-100" onclick="buyProduct('Kaos Basic', 75000)">Beli Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/motif.jpg" class="card-img-top" alt="Kaos Graphic">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Kaos Graphic</h5>
+                            <p class="card-text">Kaos dengan desain grafis unik dan menarik untuk gaya kasual Anda.</p>
+                            <div class="mt-auto">
+                                <p class="price">Rp 95.000</p>
+                                <button class="btn btn-primary w-100" onclick="buyProduct('Kaos Graphic', 95000)">Beli Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/polo.jpg" alt="Kaos Polo" class="card-img-top" alt="Kaos Polo">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Kaos Polo</h5>
+                            <p class="card-text">Kaos polo dengan kerah klasik, cocok untuk acara semi formal.</p>
+                            <div class="mt-auto">
+                                <p class="price">Rp 125.000</p>
+                                <button class="btn btn-primary w-100" onclick="buyProduct('Kaos Polo', 125000)">Beli Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hoodie Section -->
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="mb-4">Hoodie</h3>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/hodie biasa.jpg" class="card-img-top" alt="Hoodie Basic">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Hoodie Basic</h5>
+                            <p class="card-text">Hoodie dengan bahan fleece yang hangat dan nyaman untuk cuaca dingin.</p>
+                            <div class="mt-auto">
+                                <p class="price">Rp 180.000</p>
+                                <button class="btn btn-primary w-100" onclick="buyProduct('Hoodie Basic', 180000)">Beli Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/hodie zip.jpg" class="card-img-top" alt="Hoodie Zip">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Hoodie Zip</h5>
+                            <p class="card-text">Hoodie dengan resleting depan, praktis dan stylish untuk gaya kasual.</p>
+                            <div class="mt-auto">
+                                <p class="price">Rp 220.000</p>
+                                <button class="btn btn-primary w-100" onclick="buyProduct('Hoodie Zip', 220000)">Beli Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/premium.jpg" class="card-img-top" alt="Hoodie Premium">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Hoodie Premium</h5>
+                            <p class="card-text">Hoodie premium dengan bahan terbaik dan desain eksklusif.</p>
+                            <div class="mt-auto">
+                                <p class="price">Rp 280.000</p>
+                                <button class="btn btn-primary w-100" onclick="buyProduct('Hoodie Premium', 280000)">Beli Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>GeoCloth</h5>
+                    <p>Toko baju online terpercaya dengan koleksi kaos dan hoodie berkualitas tinggi.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2024 GeoCloth. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
